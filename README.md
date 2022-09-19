@@ -8,7 +8,7 @@ You will document your work on the assignment in a written journal entry. These 
 All the files necessary for this assignment are contained within this repository. In general for each assignment you should always include:
 * all files necessary to compile your program
 * ``reflection.md`` containing your reflections and notes
-* ``checklist.md`` where you document which elements of the assignment you have attempted and/or completed.
+* ``rubric.md`` where you document which elements of the assignment you have attempted and/or completed.
 * future assignments may also ask for additional specific elements
 
 ## Resource Exploration
