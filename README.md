@@ -3,11 +3,11 @@
 ## Outline
 This assignment has two main purposes. The first is to help you become familiar with some of the resources available to help you succeed in the course, and get you used to using them. The second is to review the programming concepts you learned in CSC 111 (or its equivalent), while beginning your introduction to Java. This assignment should use techniques and ideas that are already familiar to you, but implementing them using the Java syntax and compiler will be new.
 
-You will document your work on the assignment in a written journal entry. These reflections, which you will be completing each week, will normally serve as a chance to consider and describe what you have learned from the assignment, any areas where you had trouble, etc. For this assignment in particular, you will augment it with the information described below. This part of each week's assignment should be prepared alongside the code, in a file called ``readme.md``. It is described more below.
+You will document your work on the assignment in a written journal entry. These reflections, which you will be completing each week, will normally serve as a chance to consider and describe what you have learned from the assignment, any areas where you had trouble, etc. For this assignment in particular, you will augment it with the information described below. This part of each week's assignment should be prepared alongside the code, in a file called ``reflection.md``. It is described more below.
 
 All the files necessary for this assignment are contained within this repository. In general for each assignment you should always include:
 * all files necessary to compile your program
-* ``readme.md`` containing your reflections and notes
+* ``reflection.md`` containing your reflections and notes
 * ``checklist.md`` where you document which elements of the assignment you have attempted and/or completed.
 * future assignments may also ask for additional specific elements
 
