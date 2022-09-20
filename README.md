@@ -64,7 +64,7 @@ Because Java has an extensive web presence, you may be able to find code on the 
 ## Grading
 The file ``checklist.md`` shows the items on which your program will be graded.  As before, you are asked to enter your own assessment of these points and submit it with the rest of your work.  
 
-_Some advice:  Start small, slow, and simple - S^4! Don't try to write everything first and then debug all at once.  First priority is to get a basic program running; you can add and debug features once you have the framework established. Use the levels in `checklist.md` to help you figure out where to start!_
+_Some advice:  Start small, slow, and simple - S^4! Don't try to write everything first and then debug all at once.  First priority is to get a basic program running; you can add and debug features once you have the framework established. Use the levels in `rubric.md` to help you figure out where to start!_
 
 Your written reflection will be graded only based on the thought and effort displayed by the entry; all reasonable submissions will receive full credit. For this assignment, the reflection should describe the differences between Python and Java you experienced while completing the assignment. 
 
