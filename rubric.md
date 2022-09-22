@@ -3,9 +3,9 @@
 
 Listed below are various aspects of the assignment.  When you turn in your work, please indicate the status of each item
 
-**YES** : indicates that the item is fully complete
-**NO** : indicates that the item is not attempted
-**PART** : indicates that the item is attempted but not fully complete
+- **YES** : indicates that the item is fully complete
+- **NO** : indicates that the item is not attempted
+- **PART** : indicates that the item is attempted but not fully complete
 
 
 ## Assignment Points:
