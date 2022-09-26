@@ -10,11 +10,12 @@ class Conversation {
     int rounds = input.nextInt();
     System.out.println("Hi! How are you today?");
     //String arrayString [];
-
+    String[] cannedResponses = {"Oh yeah?","Mhmm...","Uh huh?","Really?"};
+    //userResponses
 
     for (int i = 0; i < rounds; i++) {
-      String userDialog = input.nextLine();
-      System.out.println(userDialog);
+      String userDialog = input.next();
+      //System.out.println(userDialog);
       System.out.println("Oh yeah?");
     }
 
