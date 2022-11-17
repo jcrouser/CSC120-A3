@@ -1,10 +1,11 @@
 import java.util.Scanner;
-import javax.lang.model.type.ArrayType;
+//import javax.lang.model.type.ArrayType;
 /**
  * Holds the conversation between the user and the computer.
  */
 class Conversation {
-  String [] mirrorWords = {"you", "me", "my", "your", "yours", "mine", "am", "i"};
+  static String [] mirrorWords = {"you", "me", "my", "your", "yours", "mine", "am", "i", "I"};
+  static String [] oppositeWords = {"I", "you", "your", "my", "mine", "yours", "are", "you", "You"};
 
   /**
    * Detects if a string array contains mirror words and how many
@@ -21,6 +22,17 @@ class Conversation {
       }
     }
     return count;
+  }
+
+  public static String [] switchMirrorWords(String [] sentence) {
+    for (int i = 0; i < sentence.length; i++) {
+      for (int j = 0; j < mirrorWords.length; j++) {
+        if (sentence[i].equals(mirrorWords[j])) {
+          sentence[i] = oppositeWords[j];
+        }
+      }
+    }
+    return sentence;
   }
 
   /** Main Method */
@@ -44,16 +56,24 @@ class Conversation {
       transcript[i*2+1] = userDialog;//stores the user's response
       System.out.println(userDialog);
 
-      //detecting if userDialog has mirror words
+      //switching words if userDialog has mirror words
       String[] userWords = userDialog.split(" ");//splits the user's response into an array of words
       if (hasMirrorWords(userWords)> 0) {//checks if the user's response has mirror words
-        //TODO: create duplicate compter response array and replace elements for each mirror word
+        String[] computerResponse = userWords;//creates a copy of the user's response
+        computerResponse = switchMirrorWords(computerResponse);//replaces the mirror words with their opposites
+        //combines the words into a string
+        String response = "";
+        for (int j = 0; j < computerResponse.length; j++) {
+          response += computerResponse[j] + " ";
+        }
+        System.out.println(response);
+        transcript[i*2+2] = response;//stores the computer's response
       }
-
-
-      String response = cannedResponses[(int)(Math.random()*5)];//generates a random response
-      System.out.println(response);
-      transcript[i*2+2] = "Oh yeah?"; //stores the computer's response
+      else {
+        String response = cannedResponses[(int)(Math.random()*cannedResponses.length)];//chooses a random canned response
+        System.out.println(response);
+        transcript[i*2+2] = response;//stores the computer's response
+      }
     }
 
     //printing out the transcript
