@@ -29,6 +29,9 @@ I am installing a new JDK using the .exe file.... hopefully that works.
 <u> 9/26 22:37 </u>
 I have been able to get the code to run on VS Code but the Debugger is still not working and there is a bug preventing it from moving past the first response that cannot be mirrored.
 
+<u> 11/17 09:56 </u>
+I returned to this assignment after a while to revise and resubmit it. Looking at it with a fresh eye made me realize how crowded and confusing my code was. I created a new git branch froman earlier stage of my work to "start afresh". Moving from that, I made suure to leave lots of spacesand comments in the code for better visibility and understanding. having more breathable code helped me to move from stage to stage much more easily. I have been able to create a function to switch mirror words that calls without compilation errors. I'm moving on by trying to achieve the Kudos tasks.
+
 References:
 https://www.educative.io/answers/how-to-generate-random-numbers-in-java
 https://www.geeksforgeeks.org/check-if-a-value-is-present-in-an-array-in-java/
