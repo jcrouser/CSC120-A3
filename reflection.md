@@ -32,6 +32,10 @@ I have been able to get the code to run on VS Code but the Debugger is still not
 <u> 11/17 09:56 </u>
 I returned to this assignment after a while to revise and resubmit it. Looking at it with a fresh eye made me realize how crowded and confusing my code was. I created a new git branch froman earlier stage of my work to "start afresh". Moving from that, I made suure to leave lots of spacesand comments in the code for better visibility and understanding. having more breathable code helped me to move from stage to stage much more easily. I have been able to create a function to switch mirror words that calls without compilation errors. I'm moving on by trying to achieve the Kudos tasks.
 
+<u> 11/17 10:22 </u>
+I have successfully completed the task. I was not able to complete all the Kudos tasks but I have a general idea of how to go about them. I was able to change the ending punctuations based on what type of puctuation the user ends with, but was not able to change mirror words that end with a punctuation mark. I can use a better regex expression to accomplish this but adding a more advanced regex expression complicates my code. 
+All in all, the major lesson I learnt from this resubmission is that _cleaner code makes it easier to think and develop work._
+
 References:
 https://www.educative.io/answers/how-to-generate-random-numbers-in-java
 https://www.geeksforgeeks.org/check-if-a-value-is-present-in-an-array-in-java/

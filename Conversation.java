@@ -24,6 +24,11 @@ class Conversation {
     return count;
   }
 
+  /**
+   * Switches the mirror words in a string array to their opposite words
+   * @param sentence the string array to be switched
+   * @return a string array with the mirror words switched to their opposite words
+   */
   public static String [] switchMirrorWords(String [] sentence) {
     for (int i = 0; i < sentence.length; i++) {
       for (int j = 0; j < mirrorWords.length; j++) {
@@ -54,7 +59,7 @@ class Conversation {
 
       String userDialog = input.nextLine();
       transcript[i*2+1] = userDialog;//stores the user's response
-      System.out.println(userDialog);
+      //System.out.println(userDialog);
 
       //switching words if userDialog has mirror words
       String[] userWords = userDialog.split(" ");//splits the user's response into an array of words
@@ -65,6 +70,17 @@ class Conversation {
         String response = "";
         for (int j = 0; j < computerResponse.length; j++) {
           response += computerResponse[j] + " ";
+        }
+        if ((userDialog.endsWith("."))||(userDialog.endsWith("!"))) {
+          response = response.substring(0, response.length()-2);//returns the string without ending punctuation
+          response += "?";
+        }
+        else if (userDialog.endsWith("?")) {
+          response = response.substring(0, response.length()-2);//returns the string without ending question mark
+          response += ".";
+        }
+        else {
+          response += "?";
         }
         System.out.println(response);
         transcript[i*2+2] = response;//stores the computer's response
