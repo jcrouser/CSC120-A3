@@ -20,17 +20,22 @@ class Conversation {
 
     System.out.println("Hi there!  What's on your mind?");
     // Storing transcript
-    String[] transcript = new String[rounds]; 
+    String[] transcript = {}; 
     transcript[0] = "Hi there! What's on your mind?";
 
     // Mirrored Words
     String[] mirroredWords = {"I","you", "me", "am", "my", "your"};
-    String[] mirroredWith = {"you","I","are","your","my"};
+    String[] mirroredWith = {"you","I","are","are","your","my"};
 
     // Conversation loop
     for (int i = 0; i < rounds; i++) {
       // Get user input
       String userInput = input.nextLine();
-
+      transcript[??] = userInput;
   }
+
+    // Goodbye message
+    String goodbye = "See ya!";
+    System.out.println(goodbye);
+    transcript[???] = goodbye;
 }
