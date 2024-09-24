@@ -2,20 +2,25 @@
 import java.util.Scanner;
 
 class Conversation {
-
+    /**
+     * Tests whether the balance on the card 
+     * is sufficient to cover a charge
+     * @param amt the desired charge
+     * @return T/F: whether the balance is sufficient
+     */
     public static void main(String[] arguments) {
         Scanner input = new Scanner(System.in); // Scanner object
 
         // Ask for the number of conversation rounds
         System.out.println("How many rounds?");
         int rounds = input.nextInt(); // Read user input
+        input.nextLine();
 
         // Array of canned responses
         String[] canned = {
             "Interesting, tell me more",
             "Why do you think that",
             "Mmm-hm",
-            "I see",
             "Can you elaborate"
         };
 
@@ -41,27 +46,28 @@ class Conversation {
 
             // Check if user input contains mirror words
             boolean hasMirroredWord = false;
-            String botResponse = userInput;
+            String userResponse = userInput;
 
             // Search for and replace mirrored words
+            
             for (int j = 0; j < mirroredWords.length; j++) {
-                if (botResponse.contains(mirroredWords[j])) {
+                if (userResponse.contains(mirroredWords[j])) {
                     // Replace word in the response
-                    botResponse = botResponse.replace(mirroredWords[j], mirroredWith[j]);
+                    userResponse = userResponse.replaceAll(mirroredWords[j], mirroredWith[j]);
                     hasMirroredWord = true;
                 }
             }
 
             // If no mirrored word found, choose a canned response
             if (!hasMirroredWord) {
-                botResponse = canned[(int) (Math.random() * canned.length)];
+                userResponse = canned[(int) (Math.random() * canned.length)];
             }
 
             // Store bot response in transcript
-            transcript[i * 2 + 2] = botResponse;
+            transcript[i * 2 + 2] = userResponse;
 
             // Output bot's response
-            System.out.println(botResponse + "?");
+            System.out.println(userResponse + "?");
         }
 
         // Goodbye message
@@ -76,5 +82,8 @@ class Conversation {
         for (String line : transcript) {
             System.out.println(line);
         }
+        input.close();
     }
 }
+
+// 'you were walking and you tripped'.replaceAll()
