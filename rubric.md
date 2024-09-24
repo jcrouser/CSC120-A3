@@ -14,7 +14,7 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 _____ 1 pt: `reflection.md` lists the classmates you consulted & TA hours attended
 
-_____ 1 pt: Program queries user for number of conversation rounds
+**YES** 1 pt: Program queries user for number of conversation rounds
 
 _____ 1 pt: Program carries out requested number of conversation rounds
 
